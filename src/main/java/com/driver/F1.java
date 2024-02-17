@@ -8,6 +8,9 @@ public class F1 extends Car {
 
 
     }
+    public String getName() {
+        return super.getName(); // Assuming you want to retrieve the name from the superclass Car
+    }
 
     public void accelerate(int rate){
         int newSpeed = getCurrentSpeed()+rate; //set the value of new speed by using currentSpeed and rate
@@ -20,7 +23,6 @@ public class F1 extends Car {
          * speed 201-250: gear 5
          * speed more than 250: gear 6
          */
-
         if (newSpeed <= 0) {
             stop();
             changeGear(1);

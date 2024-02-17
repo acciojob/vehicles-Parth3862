@@ -10,6 +10,10 @@ public class Vehicle {
         this.currentSpeed=0;
         this.currentDirection=0;
     }
+    public String getName() {
+        return name;
+    }
+
 
     public void steer(int direction){
         //direction is in degrees, add it to the current direction

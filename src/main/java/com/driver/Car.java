@@ -42,6 +42,9 @@ public class Car extends Vehicle {
     public int getCurrentGear(){
         return currentGear;
     }
+    public String getName() {
+        return super.getName(); // Assuming you want to retrieve the name from the superclass Vehicle
+    }
 
     public void changeGear(int newGear){
         this.currentGear=newGear;
